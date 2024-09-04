@@ -1,0 +1,5 @@
+[32m2024-08-26 13:57:01 -0300[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 52d53eb1-33c2-448d-84ac-d26f0101c1db - 64121 - LOGS_CAPTURED - Started capturing logs in process (pid: 64121).
+[32m2024-08-26 13:57:01 -0300[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 52d53eb1-33c2-448d-84ac-d26f0101c1db - 64121 - reclamacoes_delivery - STEP_START - Started execution of step "reclamacoes_delivery".
+[32m2024-08-26 13:57:01 -0300[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 52d53eb1-33c2-448d-84ac-d26f0101c1db - 64121 - reclamacoes_delivery - STEP_OUTPUT - Yielded output "result" of type "Nothing". (Type check passed).
+[32m2024-08-26 13:57:01 -0300[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 52d53eb1-33c2-448d-84ac-d26f0101c1db - 64121 - reclamacoes_delivery - ASSET_MATERIALIZATION - Materialized value reclamacoes_delivery.
+[32m2024-08-26 13:57:01 -0300[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 52d53eb1-33c2-448d-84ac-d26f0101c1db - 64121 - reclamacoes_delivery - STEP_SUCCESS - Finished execution of step "reclamacoes_delivery" in 242ms.

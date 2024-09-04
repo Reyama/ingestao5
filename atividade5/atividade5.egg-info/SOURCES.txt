@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+atividade5/__init__.py
+atividade5/assets.py
+atividade5.egg-info/PKG-INFO
+atividade5.egg-info/SOURCES.txt
+atividade5.egg-info/dependency_links.txt
+atividade5.egg-info/requires.txt
+atividade5.egg-info/top_level.txt

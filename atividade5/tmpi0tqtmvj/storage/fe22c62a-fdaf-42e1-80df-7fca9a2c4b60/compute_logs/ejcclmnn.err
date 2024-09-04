@@ -1,0 +1,40 @@
+[32m2024-08-26 13:49:49 -0300[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - fe22c62a-fdaf-42e1-80df-7fca9a2c4b60 - 43300 - LOGS_CAPTURED - Started capturing logs in process (pid: 43300).
+[32m2024-08-26 13:49:49 -0300[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - fe22c62a-fdaf-42e1-80df-7fca9a2c4b60 - 43300 - reclamacoes_trusted - STEP_START - Started execution of step "reclamacoes_trusted".
+[32m2024-08-26 13:49:49 -0300[0m - dagster - [34mERROR[0m - [31m__ASSET_JOB - fe22c62a-fdaf-42e1-80df-7fca9a2c4b60 - 43300 - reclamacoes_trusted - STEP_FAILURE - Execution of step "reclamacoes_trusted" failed.
+
+dagster._core.errors.DagsterExecutionStepExecutionError: Error occurred while executing op "reclamacoes_trusted"::
+
+pyarrow.lib.ArrowTypeError: ("Expected bytes, got a 'int' object", 'Conversion failed for column quantidade_total_de_clientes_ccs_e_scr with type object')
+
+Stack Trace:
+  File "/home/roberto/.virtualenvs/dagster/lib/python3.10/site-packages/dagster/_core/execution/plan/utils.py", line 54, in op_execution_error_boundary
+    yield
+  File "/home/roberto/.virtualenvs/dagster/lib/python3.10/site-packages/dagster/_utils/__init__.py", line 473, in iterate_with_context
+    next_output = next(iterator)
+  File "/home/roberto/.virtualenvs/dagster/lib/python3.10/site-packages/dagster/_core/execution/plan/compute_generator.py", line 141, in _coerce_op_compute_fn_to_iterator
+    result = invoke_compute_fn(
+  File "/home/roberto/.virtualenvs/dagster/lib/python3.10/site-packages/dagster/_core/execution/plan/compute_generator.py", line 129, in invoke_compute_fn
+    return fn(context, **args_to_pass) if context_arg_provided else fn(**args_to_pass)
+  File "/home/roberto/python/pos/ingestao/atividade5_pandas/atividade5/atividade5/assets/reclamacoes.py", line 40, in reclamacoes_trusted
+    df_reclamacoes.to_parquet(f'{TRUSTED_FOLDER}/Reclamações/reclamacoes.parquet')
+  File "/home/roberto/.virtualenvs/dagster/lib/python3.10/site-packages/pandas/util/_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+  File "/home/roberto/.virtualenvs/dagster/lib/python3.10/site-packages/pandas/core/frame.py", line 3113, in to_parquet
+    return to_parquet(
+  File "/home/roberto/.virtualenvs/dagster/lib/python3.10/site-packages/pandas/io/parquet.py", line 480, in to_parquet
+    impl.write(
+  File "/home/roberto/.virtualenvs/dagster/lib/python3.10/site-packages/pandas/io/parquet.py", line 190, in write
+    table = self.api.Table.from_pandas(df, **from_pandas_kwargs)
+  File "pyarrow/table.pxi", line 4623, in pyarrow.lib.Table.from_pandas
+  File "/home/roberto/.virtualenvs/dagster/lib/python3.10/site-packages/pyarrow/pandas_compat.py", line 616, in dataframe_to_arrays
+    arrays = [convert_column(c, f)
+  File "/home/roberto/.virtualenvs/dagster/lib/python3.10/site-packages/pyarrow/pandas_compat.py", line 616, in <listcomp>
+    arrays = [convert_column(c, f)
+  File "/home/roberto/.virtualenvs/dagster/lib/python3.10/site-packages/pyarrow/pandas_compat.py", line 603, in convert_column
+    raise e
+  File "/home/roberto/.virtualenvs/dagster/lib/python3.10/site-packages/pyarrow/pandas_compat.py", line 597, in convert_column
+    result = pa.array(col, type=type_, from_pandas=True, safe=safe)
+  File "pyarrow/array.pxi", line 358, in pyarrow.lib.array
+  File "pyarrow/array.pxi", line 85, in pyarrow.lib._ndarray_to_array
+  File "pyarrow/error.pxi", line 92, in pyarrow.lib.check_status
+[0m

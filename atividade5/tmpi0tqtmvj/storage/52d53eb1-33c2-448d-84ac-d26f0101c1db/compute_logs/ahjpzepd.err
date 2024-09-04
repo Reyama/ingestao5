@@ -1,0 +1,5 @@
+[32m2024-08-26 13:56:59 -0300[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 52d53eb1-33c2-448d-84ac-d26f0101c1db - 63986 - LOGS_CAPTURED - Started capturing logs in process (pid: 63986).
+[32m2024-08-26 13:56:59 -0300[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 52d53eb1-33c2-448d-84ac-d26f0101c1db - 63986 - empregados_trusted - STEP_START - Started execution of step "empregados_trusted".
+[32m2024-08-26 13:56:59 -0300[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 52d53eb1-33c2-448d-84ac-d26f0101c1db - 63986 - empregados_trusted - STEP_OUTPUT - Yielded output "result" of type "Nothing". (Type check passed).
+[32m2024-08-26 13:56:59 -0300[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 52d53eb1-33c2-448d-84ac-d26f0101c1db - 63986 - empregados_trusted - ASSET_MATERIALIZATION - Materialized value empregados_trusted.
+[32m2024-08-26 13:56:59 -0300[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 52d53eb1-33c2-448d-84ac-d26f0101c1db - 63986 - empregados_trusted - STEP_SUCCESS - Finished execution of step "empregados_trusted" in 154ms.

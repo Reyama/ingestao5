@@ -1,0 +1,16 @@
+Não foi possível abrir o arquivo
+ano                                                 int64
+trimestre                                          object
+Categoria                                          object
+tipo                                               object
+cnpj_if                                            object
+instituicao_financeira                             object
+indice                                             object
+quantidade_de_reclamacoes_reguladas_procedentes     int64
+quantidade_de_reclamacoes_reguladas_outras          int64
+quantidade_de_reclamacoes_nao_reguladas             int64
+quantidade_total_de_reclamacoes                     int64
+quantidade_total_de_clientes_ccs_e_scr             object
+quantidade_de_clientes_ccs                         object
+quantidade_de_clientes_scr                         object
+dtype: object

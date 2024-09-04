@@ -1,0 +1,5 @@
+[32m2024-08-26 13:49:49 -0300[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - fe22c62a-fdaf-42e1-80df-7fca9a2c4b60 - 43298 - LOGS_CAPTURED - Started capturing logs in process (pid: 43298).
+[32m2024-08-26 13:49:49 -0300[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - fe22c62a-fdaf-42e1-80df-7fca9a2c4b60 - 43298 - bancos_trusted - STEP_START - Started execution of step "bancos_trusted".
+[32m2024-08-26 13:49:49 -0300[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - fe22c62a-fdaf-42e1-80df-7fca9a2c4b60 - 43298 - bancos_trusted - STEP_OUTPUT - Yielded output "result" of type "Nothing". (Type check passed).
+[32m2024-08-26 13:49:49 -0300[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - fe22c62a-fdaf-42e1-80df-7fca9a2c4b60 - 43298 - bancos_trusted - ASSET_MATERIALIZATION - Materialized value bancos_trusted.
+[32m2024-08-26 13:49:49 -0300[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - fe22c62a-fdaf-42e1-80df-7fca9a2c4b60 - 43298 - bancos_trusted - STEP_SUCCESS - Finished execution of step "bancos_trusted" in 120ms.
